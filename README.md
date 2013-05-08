@@ -147,7 +147,7 @@ Alternatively, you can download the source code for a scriptbox program and manu
         $ msb-make bashrc /home/<yourself>/ssh-man -add-path  # this adds ssh-man on your PATH
         $ source ~/.bashrc 
 
-This kind of installation straight from github works too. However, installed and distributed like that, other developers will not be able to reliably use your scriptbox program, in order to call it from their own programs, if you do not provide a real installable package and that installs your scriptbox program in a standard location. The download-from-github procedure is therefore not a viable package distribution method. It is better to really build a package.
+This kind of installation straight from github works too. However, installed and distributed like that, other developers will not be able to reliably use your scriptbox program, in order to call it from their own programs, if you do not provide a real installable package, that installs your scriptbox program in a standard location. The download-from-github procedure is therefore not a viable package distribution method. It is better to really build a package.
 
 #Remainder of the Cookbook
 Coming soon ...
