@@ -16,11 +16,11 @@ You can find their source code here: [github.com/myscriptbox-org](https://github
 
 ## Install deb-client
 
-Add the key myscriptbox.org key to your repository keys:
+Add the myscriptbox.org key to your repository keys:
 
         $ wget -q -O - http://packages.myscriptbox.org/gpg.key |  sudo apt-key add -
 
-Next, Add the myscriptbox.org repository to /etc/apt/sources.list:
+Next, Add the myscriptbox.org repository to a file in /etc/apt/sources.list.d:
 
         $ echo "deb http://packages.myscriptbox.org/apt/ubuntu precise main" | \
                 sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
@@ -41,7 +41,7 @@ And access its man page:
 
 You can see immediately what the problem is with these instructions. How do you know everything went ok? What do you do when there are error messages telling you that something went wrong? 
 
-Trying to make it easier to troubleshoot failed repo installations, is exactly what the little `deb-client` program is about. Unfortunately, you first need to install `deb-client`, and therefore add a repo key and a repository, and therefore exactly do with the more difficult steps above, what `deb-client` was trying to streamline.
+Trying to make it easier to troubleshoot failed repo installations, is exactly what the little `deb-client` program is about. Unfortunately, you first need to install `deb-client`, and therefore add a repo key and a repository, and therefore exactly do with the more difficult steps above. This is what `deb-client` is trying to streamline ...
 
 ## Working with deb-client
 
