@@ -64,7 +64,7 @@ To view a list of additional repos:
         myscriptbox.list                         http://packages.myscriptbox.org/apt/ubuntu              precise        
         precise-partner.list                     http://archive.canonical.com/ubuntu                     precise        
 
-In order to install additional `keys` and `repos` you can use additional deb-client commands. You will find the complete list of commands with:
+In order to install additional `keys` and `repos` you can use additional `deb-client` commands. You will find the complete list of commands with:
         
         $ man deb-client
 
@@ -95,16 +95,16 @@ Now, you can add them again, and verify that everything went ok.
 
 ## What is myscriptbox.org?
 
-`myscriptbox.org` is a method to facilate building programs that work a bit like `deb-client` and to facilitate publishing them through remote debian repositories. The main idea is to build a commandline program first and test it on the commandline. From there, it becomes possible to call this commandline programs in other commandline programs, or alternatively, produce a graphical user interface and supply the combination to end users, who will be able to install and use it.
+`myscriptbox.org` is a method to facilate building programs that work a bit like `deb-client` and to facilitate publishing them through remote debian repositories. The main idea is to build a commandline program first and test it from the commandline. From there, it becomes possible to call this commandline programs in other commandline programs, or alternatively, produce a graphical user interface and supply the combination to end users, who will be able to install and use it.
 
 The idea is to build these graphical user interfaces in javascript with JQueryMobile/PhoneGap for deployment to phones and JQuery/Bootstrap to deploy them to web, desktop, or tablet. Time permitting, I will add to the `myscriptbox.org` a few tools that will facilitate building graphical user interfaces calling into your backend commandline scriptbox programs over ajax. But first, you need to build the backend programs that will respond to your graphical interfaces.
 
 As you have noticed, you were able to download the `deb-client` program from a remote debian repository. How to set that up? How to manage it? The next steps in this cookbook will consist in:
 
-(1) Creating a simple commandline script
-(2) Set up a simulation repository server on your own laptop
-(3) Publish your commandline script to your simulation repository server
-(4) Install the demo program on your own machine 
+        (1) Creating a simple commandline script
+        (2) Set up a simulation repository server on your own laptop
+        (3) Publish your commandline script to your simulation repository server
+        (4) Install the demo program on your own machine 
 
 If you setup a real remote repository, you can ask your friends to install your demo program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository on your own machine, you will already know how to do that.
 
