@@ -41,7 +41,7 @@ And access its man page:
 
 You can see immediately what the problem is with these instructions. How do you know everything went ok? What do you do when there are error messages telling you that something went wrong? 
 
-Trying to make it easier to troubleshoot failed repo installations, is exactly what the little `deb-client` program is about. Unfortunately, you first need to install it, and therefore add a repo key and a repository, and therefore exactly do what `deb-client` was trying to streamline.
+Trying to make it easier to troubleshoot failed repo installations, is exactly what the little `deb-client` program is about. Unfortunately, you first need to install `deb-client`, and therefore add a repo key and a repository, and therefore exactly do with the more difficult steps above, what `deb-client` was trying to streamline.
 
 ## Working with deb-client
 
