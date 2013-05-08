@@ -20,7 +20,7 @@ Add the myscriptbox.org key to your repository keys:
 
         $ wget -q -O - http://packages.myscriptbox.org/gpg.key |  sudo apt-key add -
 
-Next, Add the myscriptbox.org repository to a file in /etc/apt/sources.list.d:
+Next, add the myscriptbox.org repository to a file in /etc/apt/sources.list.d:
 
         $ echo "deb http://packages.myscriptbox.org/apt/ubuntu precise main" | \
                 sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
