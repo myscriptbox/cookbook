@@ -118,7 +118,7 @@ There is no particular preference for any scripting language for backend program
 
 There are languages that may not work particularly well, directly in a scriptbox. Languages that require a compilation and/or linking step are not directly supported. We miss C here. Time permitting, I will try to find a way to easily deploy C programs and libraries too, in conjunction with a scriptbox. It will probably be a separate project, because C has substantially more extensive compilation and linking requirements than a scripting language.
 
-Languages that start their primary process slowly, such as Java, may also not be a good choice for a scriptbox implementation. Other than that, you can use any one of the typical languages in a scripting environment: Bash (or other shells), Javascript, PHP, Perl, Lua, Tcl, Python, name it. It will probably work.
+Languages that start their primary process slowly, such as Java, may also not be a good choice for a scriptbox implementation. Other than that, you can use any one of the typical languages in a scripting environment: Bash (or other shells), Javascript, PHP, Perl, Lua, Tcl, Python, Ruby, name it. It will probably work.
 
 As you will see later on, the idea in a scriptbox program will be to reuse existing commandline programs and existing logic that already exist somewhere in the `scripting balkans`. The idea is not to write an extensive amount of code, but to make lots of existing code easier to use and to test. Typically, you can find lots of library code already available in:
 
@@ -128,6 +128,7 @@ As you will see later on, the idea in a scriptbox program will be to reuse exist
 * Lua        ([luaforge.net](http://luaforge.net))
 * Python     ([pypi.python.org](http://pypi.python.org))
 * Tcl        ([wiki.tcl.tk](http://wiki.tcl.tk/16925))
+* Ruby       ([rubygems.org](http://rubygems.org))
 
 `myscriptbox.org` programs tend to chain executables and not function APIs. Therefore, it is perfectly possible to mix and match scripting languages. You do not have to worry about inter-language compatibility. This also means that `myscriptbox.org` is not a suitable method to publish library function APIs. It is only suitable to publish program-based APIs. Since the vast majority of network APIs (such as ajax) are mandatorily program-based -and not function-based APIs, you can see that program-based APIs have their place too.
 
