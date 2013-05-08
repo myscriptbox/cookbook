@@ -6,13 +6,13 @@ You can find their source code here: [github.com/myscriptbox-org](https://github
 
 ## Complete list of myscriptbox.org programs
 
-1. `deb-client`: install a scriptbox program on your own machine
-2. `msb-simul-server`: create a local simulation server
+1. `deb-client`: install a scriptbox repository on your own machine
+2. `msb-simul-server`: create a local simulation repository server
 3. `msb-make`: create your own scriptbox program
 4. `ssh-man`: manage your ssh keys (to execute instructions on remote publication servers)
-5. `gpg-man`: manage your gpg keys (to sign your scripbox program packages)
+5. `gpg-man`: manage your gpg keys (to sign your scriptbox program packages)
 6. `deb-publish-root`: set up your own real (or simulated) publication repository
-7. `deb-publish`: publish to a publication repository
+7. `deb-publish`: publish to a publication repository (yours or someone else's)
 
 ## Install deb-client
 
