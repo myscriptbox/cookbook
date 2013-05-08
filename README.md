@@ -81,12 +81,14 @@ You can remove it with:
 From there, you can use the `deb-client keys -show` and `deb-client repos -show` commands to verify that everything went ok:
 
         $ deb-client keys -show
+
         ftpmaster@ubuntu.com                     437D05B5   Ubuntu Archive Automatic Signing Key
         cdimage@ubuntu.com                       FBB75451   Ubuntu CD Image Automatic Signing Key
         ftpmaster@ubuntu.com                     3E5C1192   Ubuntu Extras Archive Automatic Signing Key
         linux-packages-keymaster@google.com      7FAC5991   Google, Inc. Linux Package Signing Key
 
         $ deb-client repos -show
+
         file                                     url                                                     release        
         google-chrome.list                       http://dl.google.com/linux/chrome/deb/                  stable         
         precise-partner.list                     http://archive.canonical.com/ubuntu                     precise        
@@ -106,11 +108,11 @@ As you have noticed, you were able to download the `deb-client` program from a r
 3. Publish your commandline script to your simulation repository server
 4. Install the scriptbox program on your own machine from the simulation repository server 
 
-If you setup a real remote repository, you can ask your friends to install your scriptbox program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository on your own machine, you will already know how to do that.
+If you setup a real remote repository, you can ask your friends to install your scriptbox program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository (one on your own laptop), you will already know how to do that.
 
 For commercial programs, you can also set up a remote repository on a commercial basis and allow access to paying customers only. The `myscriptbox.org` publication process allows for this too by implementing an optional system of registered users.
 
-There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The default router is a shell script, but the subcommands can be written in any language. You do not need to use the default bash script subcommand router. You can use your own router, written in any scripting language as you prefer. 
+There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The default router is a shell script, but the subcommands can be written in any language. You also do not need to use the default bash script subcommand router. You can use your own router, written in any scripting language as you prefer. 
 
 There are languages that may not work particularly well, directly in a scriptbox. Languages that require a compilation and/or linking step are not directly supported. We miss C here. Time permitting, I will try to find a way to easily deploy C programs and libraries too, in conjunction with a scriptbox. It will probably be a separate project, because C has substantially more extensive compilation and linking requirements than a scripting language.
 
@@ -147,7 +149,7 @@ Alternatively, you can download the source code for a scriptbox program and manu
         $ msb-make bashrc /home/<yourself>/ssh-man -add-path  # this adds ssh-man on your PATH
         $ source ~/.bashrc 
 
-This kind of installation straight from github works too. However, installed and distributed like that, other developers will not be able to reliably use your scriptbox program, in order to call it from their own programs, if you do not provide a real installable package, that installs your scriptbox program in a standard location. The download-from-github procedure is therefore not a viable package distribution method. It is better to really build a package.
+This kind of installation straight from github works too. However, installed and distributed like that, other developers will not be able to reliably use your scriptbox program, in order to call it from their own programs. If you do not provide a real installable package, that installs your scriptbox program in a standard location, re-using your program may become a problem. The download-from-github procedure is therefore not a viable package distribution method. It is better to really build a package.
 
 #Remainder of the Cookbook
 Coming soon ...
