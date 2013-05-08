@@ -82,12 +82,14 @@ From there, you can use the `deb-client keys -show` and `deb-client repos -show`
 
         $ deb-client keys -show
 
+
         ftpmaster@ubuntu.com                     437D05B5   Ubuntu Archive Automatic Signing Key
         cdimage@ubuntu.com                       FBB75451   Ubuntu CD Image Automatic Signing Key
         ftpmaster@ubuntu.com                     3E5C1192   Ubuntu Extras Archive Automatic Signing Key
         linux-packages-keymaster@google.com      7FAC5991   Google, Inc. Linux Package Signing Key
 
         $ deb-client repos -show
+
 
         file                                     url                                                     release        
         google-chrome.list                       http://dl.google.com/linux/chrome/deb/                  stable         
