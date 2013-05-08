@@ -118,12 +118,12 @@ Languages that start their primary process slowly, such as Java, may also not be
 
 As you will see later on, the idea in a scriptbox program will be to reuse existing commandline programs and existing logic that already exist somewhere in the `scripting balkans`. The idea is not to write an extensive amount of code, but to make lots of existing code easier to use and to test. Typically, you can find lots of library code already available in:
 
-        Javascript [npmjs.org]
-        PHP        [packagist.org]
-        Perl       [www.cpan.org]
-        Lua        [luaforge.net]
-        Python     [pypi.python.org]
-        Tcl        [wiki.tcl.tk/16925]
+        Javascript [npmjs.org](http://npmjs.org)
+        PHP        [packagist.org](http://packagist.org)
+        Perl       [www.cpan.org](http://www.cpan.org)
+        Lua        [luaforge.net](http://luaforge.net)
+        Python     [pypi.python.org](http://pypi.python.org)
+        Tcl        [wiki.tcl.tk](http://wiki.tcl.tk/16925)
 
 `myscriptbox.org` programs tend to chain executables and not function APIs. Therefore, it is perfectly possible to mix and match scripting languages. You do not have to worry about inter-language compatibility. This also means that `myscriptbox.org` is not a suitable method to publish library function APIs. It is only suitable to publish program-based APIs. Since the vast majority of network APIs (such as ajax) are mandatorily program-based -and not function-based APIs, you can see that program-based APIs have their place too.
 
