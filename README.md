@@ -2,6 +2,8 @@
 
 The `myscriptbox.org` programs work with `debian` systems or systems derived from debian, such as `ubuntu`, `mint`. Follow the link to find an (incomplete) list of [debian-derived distros](http://www.debian.org/misc/children-distros).
 
+You can find their source code here: [github.com/myscriptbox-org](https://github.com/myscriptbox-org)
+
 ## Complete list of myscriptbox.org programs
 
 1. `deb-client`: install a scriptbox program on your own machine
