@@ -110,11 +110,11 @@ If you setup a real remote repository, you can ask your friends to install your 
 
 For commercial programs, you can also set up a remote repository on a commercial basis and allow access to paying customers only. The `myscriptbox.org` publication process allows for this too.
 
-There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The router is a shell script, but the subcommands can be written in any language. You do not need to use the shell script subcommand router. You can use your own router in any scripting language you prefer. 
+There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The router is a shell script, but the subcommands can be written in any language. You do not need to use the default shell script subcommand router. You can use your own router, written in any scripting language as you prefer. 
 
 There are languages that may not work particularly well, directly in a scriptbox. Languages that require a compilation and/or linking step are not directly supported. We miss C here. Time permitting, I will try to find a way to easily deploy C programs and libraries too, in conjunction with a scriptbox. It will probably be a separate project, because C has substantially more extensive compilation and linking requirements than a scripting language.
 
-Languages that start their primary process slowly, such as Java, may also not be a good choice for a scriptbox implementation. Other than that, you can use any one of the typical languages in a scripting environment: Shell, Javascript, PHP, Perl, Lua, Tcl, Python, name it. It will probably work.
+Languages that start their primary process slowly, such as Java, may also not be a good choice for a scriptbox implementation. Other than that, you can use any one of the typical languages in a scripting environment: Bash (or other shells), Javascript, PHP, Perl, Lua, Tcl, Python, name it. It will probably work.
 
 As you will see later on, the idea in a scriptbox program will be to reuse existing commandline programs and existing logic that already exist somewhere in the `scripting balkans`. The idea is not to write an extensive amount of code, but to make lots of existing code easier to use and to test. Typically, you can find lots of library code already available in:
 
@@ -125,7 +125,7 @@ Lua        [luaforge.net]
 Python     [pypi.python.org]
 Tcl        [wiki.tcl.tk/16925]
 
-`myscriptbox.org` programs tend to chain executables and not function APIs. Therefore, it is perfectly possible to mix and match scripting languages. You do not have to worry about inter-language compatibility. This also means that `myscriptbox.org` is not a suitable method to publish library function APIs. It is only suitable to publish program APIs. Since the vast majority of network APIs (such as ajax) are mandatorily program -and not function APIs, you can see that program APIs have their place too.
+`myscriptbox.org` programs tend to chain executables and not function APIs. Therefore, it is perfectly possible to mix and match scripting languages. You do not have to worry about inter-language compatibility. This also means that `myscriptbox.org` is not a suitable method to publish library function APIs. It is only suitable to publish program-based APIs. Since the vast majority of network APIs (such as ajax) are mandatorily program-based -and not function-based APIs, you can see that program-based APIs have their place too.
 
 To facilitate communication between two programs, it is also required to pay close attention to data serialization and deserialization. Time permitting, I will also write a few remarks about this issue. 
 
