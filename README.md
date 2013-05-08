@@ -106,11 +106,11 @@ As you have noticed, you were able to download the `deb-client` program from a r
         (3) Publish your commandline script to your simulation repository server
         (4) Install the demo program on your own machine 
 
-If you setup a real remote repository, you can ask your friends to install your demo program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository on your own machine, you will already know how to do that.
+If you setup a real remote repository, you can ask your friends to install your scriptbox program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository on your own machine, you will already know how to do that.
 
-For commercial programs, you can also set up a remote repository on a commercial basis and allow access to paying customers only. The `myscriptbox.org` publication process allows for this too.
+For commercial programs, you can also set up a remote repository on a commercial basis and allow access to paying customers only. The `myscriptbox.org` publication process allows for this too by implementing an optional system of registered users.
 
-There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The router is a shell script, but the subcommands can be written in any language. You do not need to use the default shell script subcommand router. You can use your own router, written in any scripting language as you prefer. 
+There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The default router is a shell script, but the subcommands can be written in any language. You do not need to use the default bash script subcommand router. You can use your own router, written in any scripting language as you prefer. 
 
 There are languages that may not work particularly well, directly in a scriptbox. Languages that require a compilation and/or linking step are not directly supported. We miss C here. Time permitting, I will try to find a way to easily deploy C programs and libraries too, in conjunction with a scriptbox. It will probably be a separate project, because C has substantially more extensive compilation and linking requirements than a scripting language.
 
