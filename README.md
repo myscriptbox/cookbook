@@ -16,24 +16,26 @@ The `myscriptbox.org` programs work with `debian` systems or systems derived fro
 
 Add the key myscriptbox.org key to your repository keys:
 
-        wget -q -O - http://packages.myscriptbox.org/gpg.key |  sudo apt-key add -
+        $ wget -q -O - http://packages.myscriptbox.org/gpg.key |  sudo apt-key add -
 
 Next, Add the myscriptbox.org repository to /etc/apt/sources.list:
 
-        echo "deb http://packages.myscriptbox.org/apt/ubuntu precise main" | sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
-        echo "deb-src http://packages.myscriptbox.org/apt/ubuntu precise main" | sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
+        $ echo "deb http://packages.myscriptbox.org/apt/ubuntu precise main" | \
+                sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
+        $ echo "deb-src http://packages.myscriptbox.org/apt/ubuntu precise main" | \
+                sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
 
 next, refresh your apt package cache:
 
-        sudo apt-get update
+        $ sudo apt-get update
 
 Now you can install `deb-client`:
 
-        sudo apt-get install deb-client
+        $ sudo apt-get install deb-client
 
 And access its man page:
 
-        man deb-client
+        $ man deb-client
 
 You can see immediately what the problem is with these instructions. How do you know everything went ok? What do you do when there are error messages telling you that something went wrong? 
 
