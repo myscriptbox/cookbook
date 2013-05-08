@@ -101,10 +101,10 @@ The idea is to build these graphical user interfaces in javascript with JQueryMo
 
 As you have noticed, you were able to download the `deb-client` program from a remote debian repository. How to set that up? How to manage it? The next steps in this cookbook will consist in:
 
-1. Creating a simple commandline script
+1. Create a simple commandline script
 2. Set up a simulation repository server on your own laptop
 3. Publish your commandline script to your simulation repository server
-4. Install the demo program on your own machine 
+4. Install the scriptbox program on your own machine from the simulation repository server 
 
 If you setup a real remote repository, you can ask your friends to install your scriptbox program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository on your own machine, you will already know how to do that.
 
