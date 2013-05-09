@@ -154,7 +154,7 @@ Alternatively, you can download the source code for a scriptbox program and manu
 
 This kind of installation straight from github works too. However, installed and distributed like that, other developers will not be able to reliably use your scriptbox program, in order to call it from their own programs. If you do not provide a real installable package, that installs your scriptbox program in a standard location, re-using your program may become a problem. The download-from-github procedure is therefore not a viable package distribution method. It is better to really build a package.
 
-#Remainder of the Cookbook
+#Next page in the Cookbook
 
 [How to create a scriptbox program](https://github.com/myscriptbox-org/cookbook/wiki/Creating-a-scriptbox-program)
 
