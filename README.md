@@ -73,7 +73,7 @@ In order to install additional `keys` and `repos` you can use additional `deb-cl
 If `deb-client` had been installed already (this is indeed a chicken and egg problem), you could have installed the key and remote repository for `deb-client` as following:
 
         $ sudo deb-client key http://packages.myscriptbox.org/gpg.key -add
-        $ sudo deb-client repo myscriptbox http://packages.myscriptbox.org/apt/ubuntu precise -add
+        $ sudo deb-client repo.url.release myscriptbox http://packages.myscriptbox.org/apt/ubuntu precise -add
 
 You can remove it with:
 
