@@ -18,13 +18,13 @@ You can find their source code here: [github.com/myscriptbox-org](https://github
 
 Add the myscriptbox.org key to your repository keys:
 
-        $ wget -q -O - http://packages.myscriptbox.org/gpg.key |  sudo apt-key add -
+        $ wget -q -O - http://msb.indiestor.com/msb.gpg.key |  sudo apt-key add -
 
 Next, add the myscriptbox.org repository to a file in /etc/apt/sources.list.d:
 
-        $ echo "deb http://packages.myscriptbox.org/apt/ubuntu precise main" | \
+        $ echo "deb http://msb.indiestor.com/apt/debian wheezy main" | \
                 sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
-        $ echo "deb-src http://packages.myscriptbox.org/apt/ubuntu precise main" | \
+        $ echo "deb-src http://msb.indiestor.com/apt/debian wheezy main" | \
                 sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
 
 next, refresh your apt package cache:
