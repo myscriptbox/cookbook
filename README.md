@@ -1,10 +1,10 @@
 # Install the myscriptbox.org programs
 
-The `myscriptbox.org` programs work with `debian` systems or systems derived from debian, such as `ubuntu`, `mint`. Follow the link to find an (incomplete) list of [debian-derived distros](http://www.debian.org/misc/children-distros).
+These programs work with `debian` systems or systems derived from debian, such as `ubuntu`, `mint`. Follow the link to find an (incomplete) list of [debian-derived distros](http://www.debian.org/misc/children-distros).
 
 You can find their source code here: [github.com/myscriptbox-org](https://github.com/myscriptbox-org)
 
-## Complete list of myscriptbox.org programs
+## Complete list of myscriptboxprograms
 
 1. `deb-client`: install a scriptbox repository on your own machine
 2. `msb-simul-server`: create a local simulation repository server
@@ -16,7 +16,7 @@ You can find their source code here: [github.com/myscriptbox-org](https://github
 
 ## Install deb-client
 
-Add the myscriptbox.org key to your repository keys:
+Add the myscriptbox key to your repository keys:
 
         $ wget -q -O - http://msb.indiestor.com/msb.gpg.key |  sudo apt-key add -
 
@@ -72,12 +72,12 @@ In order to install additional `keys` and `repos` you can use additional `deb-cl
 
 If `deb-client` had been installed already (this is indeed a chicken and egg problem), you could have installed the key and remote repository for `deb-client` as following:
 
-        $ sudo deb-client key http://packages.myscriptbox.org/gpg.key -add
-        $ sudo deb-client repo.url.release myscriptbox http://packages.myscriptbox.org/apt/ubuntu precise -add
+        $ sudo deb-client key http://msb.indiestor.com/msb.gpg.key -add
+        $ sudo deb-client repo.url.release myscriptbox http://msb.indiestor.com/apt/debian wheezy -add
 
 You can remove it with:
 
-        $ sudo deb-client key signatory@packages.myscriptbox.org -remove
+        $ sudo deb-client key msb@msb.indiestor.com -remove
         $ sudo deb-client repo myscriptbox.list -remove
 
 From there, you can use the `deb-client keys -show` and `deb-client repos -show` commands to verify that everything went ok:
@@ -97,11 +97,11 @@ From there, you can use the `deb-client keys -show` and `deb-client repos -show`
 
 Now, you can add them again, and verify that everything went ok.
 
-## What is myscriptbox.org?
+## What is myscriptbox?
 
-`myscriptbox.org` is a method to facilate building programs that work a bit like `deb-client` and to facilitate publishing them through remote debian repositories. The main idea is to build a commandline program first and test it from the commandline. From there, it becomes possible to call this commandline programs in other commandline programs, or alternatively, produce a graphical user interface and supply the combination to end users, who will be able to install and use it.
+`myscriptbox` is a method to facilate building programs that work a bit like `deb-client` and to facilitate publishing them through remote debian repositories. The main idea is to build a commandline program first and test it from the commandline. From there, it becomes possible to call this commandline programs in other commandline programs, or alternatively, produce a graphical user interface and supply the combination to end users, who will be able to install and use it.
 
-The idea is to build these graphical user interfaces in javascript with JQueryMobile/PhoneGap for deployment to phones and JQuery/Bootstrap to deploy them to web, desktop, or tablet. Time permitting, I will add to the `myscriptbox.org` a few tools that will facilitate building graphical user interfaces calling into your backend commandline scriptbox programs over ajax. But first, you need to build the backend programs that will respond to your graphical interfaces.
+The idea is to build these graphical user interfaces in javascript with JQueryMobile/PhoneGap for deployment to phones and JQuery/Bootstrap to deploy them to web, desktop, or tablet. Time permitting, I will add to the `myscriptbox` a few tools that will facilitate building graphical user interfaces calling into your backend commandline scriptbox programs over ajax. But first, you need to build the backend programs that will respond to your graphical interfaces.
 
 As you have noticed, you were able to download the `deb-client` program from a remote debian repository. How to set that up? How to manage it? The next steps in this cookbook will consist in:
 
@@ -112,9 +112,9 @@ As you have noticed, you were able to download the `deb-client` program from a r
 
 If you setup a real remote repository, you can ask your friends to install your scriptbox program too. Since it is not possible for the publication scripts to see the difference between a real remote repository and a simulation repository (one on your own laptop), you will already know how to do that.
 
-For commercial programs, you can also set up a remote repository on a commercial basis and allow access to paying customers only. The `myscriptbox.org` publication process allows for this too by implementing an optional system of registered users.
+For commercial programs, you can also set up a remote repository on a commercial basis and allow access to paying customers only. The `myscriptbox` publication process allows for this too by implementing an optional system of registered users.
 
-There is no particular preference for any scripting language for backend programs in `myscriptbox.org`. The default router is a shell script, but the subcommands can be written in any language. You also do not need to use the default bash script subcommand router. You can use your own router, written in any scripting language as you prefer. 
+There is no particular preference for any scripting language for backend programs in `myscriptbox`. The default router is a shell script, but the subcommands can be written in any language. You also do not need to use the default bash script subcommand router. You can use your own router, written in any scripting language as you prefer. 
 
 There are languages that may not work particularly well, directly in a scriptbox. Languages that require a compilation and/or linking step are not directly supported. We miss C here. Time permitting, I will try to find a way to easily deploy C programs and libraries too, in conjunction with a scriptbox. It will probably be a separate project, because C has substantially more extensive compilation and linking requirements than a scripting language.
 
@@ -130,7 +130,7 @@ As you will see later on, the idea in a scriptbox program will be to reuse exist
 * Tcl        ([wiki.tcl.tk](http://wiki.tcl.tk/16925))
 * Ruby       ([rubygems.org](http://rubygems.org))
 
-`myscriptbox.org` programs tend to chain executables and not function APIs. Therefore, it is perfectly possible to mix and match scripting languages. You do not have to worry about inter-language compatibility. This also means that `myscriptbox.org` is not a suitable method to publish library function APIs. It is only suitable to publish program-based APIs. Since the vast majority of network APIs (such as ajax) are mandatorily program-based -and not function-based APIs, you can see that program-based APIs have their place too.
+`myscriptbox` programs tend to chain executables and not function APIs. Therefore, it is perfectly possible to mix and match scripting languages. You do not have to worry about inter-language compatibility. This also means that `myscriptbox` is not a suitable method to publish library function APIs. It is only suitable to publish program-based APIs. Since the vast majority of network APIs (such as ajax) are mandatorily program-based -and not function-based APIs, you can see that program-based APIs have their place too.
 
 To facilitate communication between two programs, it is also required to pay close attention to data serialization and deserialization. Time permitting, I will also write a few remarks about this issue. 
 
