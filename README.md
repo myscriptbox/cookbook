@@ -1,4 +1,4 @@
-# Install the myscriptbox.org programs
+# Install the myscriptbox programs
 
 These programs work with `debian` systems or systems derived from debian, such as `ubuntu`, `mint`. Follow the link to find an (incomplete) list of [debian-derived distros](http://www.debian.org/misc/children-distros).
 
