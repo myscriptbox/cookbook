@@ -20,11 +20,16 @@ Add the myscriptbox key to your repository keys:
 
         $ wget -q -O - http://msb.indiestor.com/msb.gpg.key |  sudo apt-key add -
 
-Next, add the myscriptbox.org repository to a file in /etc/apt/sources.list.d:
+Next, add the appropriate myscriptbox.org repository:
 
         $ echo "deb http://msb.indiestor.com/apt/debian wheezy main" | \
                 sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
         $ echo "deb-src http://msb.indiestor.com/apt/debian wheezy main" | \
+                sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
+
+        $ echo "deb http://msb.indiestor.com/apt/debian jessie main" | \
+                sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
+        $ echo "deb-src http://msb.indiestor.com/apt/debian jessie main" | \
                 sudo tee -a /etc/apt/sources.list.d/myscriptbox.list
 
 next, refresh your apt package cache:
